@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<title>Zombie Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="menu">
+  <h1>ZOMBIE GAME</h1>
+  <button id="playBtn">SPIELEN</button>
+</div>
+
+
+<div id="gameUI" style="display:none;">
+ Coins: <span id="coins">0</span><br>
+ Score: <span id="score">0</span><br>
+ Time: <span id="timer">90</span>
+ 
+</div>
+
+<div id="hpbar">
+ <div id="hpfill">
+  <span id="hptext">100</span>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script type="module" src="main.js"></script>
+
+</body>
+</html>

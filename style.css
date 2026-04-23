@@ -1,0 +1,86 @@
+body {
+ margin:0;
+ overflow:hidden;
+ background:black;
+ color:white;
+ font-family:Arial;
+}
+
+#menu {
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ background:#111;
+ z-index:10;
+}
+
+button {
+ padding:20px 40px;
+ font-size:20px;
+ background:red;
+ border:none;
+ color:white;
+ border-radius:10px;
+}
+
+#gameUI {
+ position:absolute;
+ top:10px;
+ left:10px;
+ z-index:5;
+ font-size:18px;
+}
+
+button {
+ touch-action: manipulation;
+}
+
+#hpbar {
+ position: fixed;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 80%;
+ height: 20px;
+ background: #333;
+
+ border-radius: 20px; /* 👈 RUND */
+ overflow: hidden;     /* 👈 wichtig für innen */
+
+ z-index: 999;
+}
+
+#hpfill {
+ height: 100%;
+ width: 100%;
+ background: linear-gradient(to right, #00ff88, #00cc66);
+ border-radius: 20px; /* 👈 auch rund */
+ transition: width 0.2s;
+}
+
+#hptext {
+ position: absolute;
+ width: 100%;
+ text-align: center;
+ color: white;
+ font-weight: bold;
+ font-size: 14px;
+ line-height: 20px; /* gleiche Höhe wie Bar */
+ pointer-events: none;
+ text-shadow: 0 0 5px black;
+}
+
+canvas {
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ display:block;
+}
